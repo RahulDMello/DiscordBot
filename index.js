@@ -1,7 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+require('dotenv').config();
+
 const config = require('./config.json');
+
+config.token = process.env.CLIENT_TOKEN;
 
 var story = "";
 
